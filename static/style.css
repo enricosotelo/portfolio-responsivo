@@ -93,7 +93,7 @@ html, body{
 }
 
 section#início {
-    background-image: url("./imgs/background1.jpg");
+    background-image: url("./imgs/background1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -125,4 +125,51 @@ section#início div#arraste {
 section#início div#arraste a {
     text-decoration: none;
     color: #ffffff;
+}
+
+i.menu-mobile {
+    position: fixed;
+    color: #fff;
+    background-color: #000000;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header {
+    left: 0;
+}
+
+
+@media (max-width: 1024px) {
+
+    #header {
+        left: -300px;
+    }
+    i.menu-mobile{
+        display: flex;
+    }
+    section#início h2{
+        font-size: 3.5rem;
+    }
+    section#início  span#subtitle{
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    #main{
+        margin-left: 0;
+    }
 }
